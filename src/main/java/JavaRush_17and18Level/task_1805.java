@@ -18,13 +18,12 @@ public class task_1805 {
     }
 
     public static void sortStringsByLength(ArrayList<String> strings) {
-
         Collections.sort(strings, new StringComparator());
     }
 }
-class StringComparator implements Comparator<String> {
-    public int compare(String s1, String s2){
-        return s1.length() - s2.length();
+class  StringComparator implements Comparator<String> {
+    @Override
+        public int compare (String o1, String o2){
+        return o1.length() - o2.length();
     }
 }
-
